@@ -39,7 +39,7 @@
             
 		}
 		a{
-			margin: 140px;
+			margin: 135px;
 			border: 1px solid green; border-radius: 5px 10px 5px 10px;
 			background-color: #222222;
 			padding: 8px;
@@ -54,15 +54,16 @@
             border-collapse: collapse;
             width: 70%;
             margin: 0 auto;
+			background-color: #333333;
         }
 		th{
-            border: 3px solid black;
+            border: 4px solid white;
             padding: 8px;
             text-align: center; 
 			color: white;
         }
         td{
-            border: 3px solid black;
+            border: 3px solid white;
             padding: 8px;
             text-align: center; 
 			color: white;
@@ -144,7 +145,17 @@
 			<td>~12,5%</td>
 			<td>słabe bielice, gleby górskie</td>
 		</tr>
-	
+	</table>
+
+	<p style="text-align: center">Napisz do mnie maila</p>
+        <form style="border: 3px solid green;" action="mailto:domel2002@o2.pl">
+			<p style="text-align: center">Twój adres e-mail</p>
+			<input type="email" id="email" name="email"><br>
+			<p style="text-align: center">Twoja wiadomość</p>
+			<textarea id="wiadomość" name="wiadomość" rows="4" cols="50"></textarea><br>
+			<input type="submit" value="Wyślij">
+		</form>	
+
 </body>
 </html>
 
