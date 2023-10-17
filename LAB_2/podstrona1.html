@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="Content-Language" content="pl" />
+	<meta name="Author" content="Dominik Franczak" />
+	<title>Ciągniki</title>
+	<script src="kolorujtlo.js" type = "text/javascript"></script>
+	<style>
+		body{
+			background-image: url(../LAB_1/obrazy/ciagnik.jpg);
+			background-size: cover;
+            background-repeat: no-repeat;
+		}
+		.image{
+			width:200px;
+			transition: transform 3s;
+		}
+		.image:hover{
+			width:300px;
+			transform: scale(2);
+		}
+		h1{
+			font-size: 65px;
+			border-bottom: 2px solid black;
+			text-align: center;
+			color: white;
+		}
+		a{
+			margin: 130px;
+			border: 1px solid green; border-radius: 5px 10px 5px 10px;
+			background-color: #222222;
+			padding: 8px;
+			transition: font-size 1s;
+			text-decoration: none;
+			color: gray;
+		}
+		a:hover {
+			font-size: 30px;
+		}
+		table{
+            border-collapse: collapse;
+            width: 70%;
+            margin: 0 auto;
+        }
+        td{
+            padding: 8px;
+            text-align: center; 
+			color: white;
+        }
+	</style>
+</head>
+
+<body>
+
+<FORM METHOD="POST" NAME="background">
+	<INPUT TYPE="button" VALUE="żółty" ONCLICK="changeBackground('#FFF000')"> 
+	<INPUT TYPE="button" VALUE="czarny" ONCLICK="changeBackground('#000000')"> 
+	<INPUT TYPE="button" VALUE="biały" ONCLICK="changeBackground('#FFFFFF')"> 
+	<INPUT TYPE="button" VALUE="zielony" ONCLICK="changeBackground('#00FF00')"> 
+	<INPUT TYPE="button" VALUE="niebieski" ONCLICK="changeBackground('#0000FF')"> 
+	<INPUT TYPE="button" VALUE="pomarańczowy" ONCLICK="changeBackground('#FF8000')"> 	
+	<INPUT TYPE="button" VALUE="szary" ONCLICK="changeBackground('#c0c0c0')"> 
+	<INPUT TYPE="button" VALUE="czerwony" ONCLICK="changeBackground('#FF0000')">
+	<INPUT TYPE="button" VALUE="grafika" ONCLICK="changeBackgroundPicture('../LAB_1/obrazy/ciagnik.jpg')">
+</FORM>
+
+	<h1>Ciągniki</h1>
+	<a href="..\LAB_2\lab1.html">Strona Główna</a>
+	<a href="..\LAB_2\podstrona2.html">Kombajny</a>
+	<a href="..\LAB_2\podstrona3.html">Maszyny</a>
+	<a href="..\LAB_2\podstrona4.html">Zwierzęta</a>
+	<a href="..\LAB_2\podstrona5.html">Uprawy</a>	
+	<br><br><br>
+	<table>
+		<tr>
+			<td>Ciągniki kołowe</td>
+			<td>To najpopularniejszy typ tego pojazdu napędzany wysokoprężną i osadzony na pompowanych powietrzem kołach. 
+			Sprawdzają się jako maszyny do prac ciężkich, lekkich jak i w roli transportera, mogącego poruszać się również po normalnych drogach </td>
+			<td><img class="image" src="../LAB_1/obrazy/fendt.jpg"></td>
+
+		</tr>
+		<tr>
+			<td> Ciągniki gąsienicowe</td>
+			<td>To specjalistyczny typ pojazdu, którego obecność w parku maszynowym zawsze jest uzasadniona. 
+			Silnik napędza tu dwie równoległe gąsienice, które idealnie sprawdzają się przy pracy w naprawdę grząskim lub sypkim terenie. 
+			Tam gdzie pompowane koła grzęzną bezradnie, gąsienice przejadą bez problemu i pozwolą nam wykonywać pracę bez przeszkód.
+			Ten typ pojazdu nie nadaje się jednak do przemieszczania po zwykłych drogach, ze względu na uszkodzenia jakie powoduje na nawierzchni</td>
+			<td><img class="image" src="../LAB_1/obrazy/case.jpg"></td>
+
+		</tr>
+		<tr>
+			<td>Ciągniki półgąsienicowe</td>
+			<td>To kompromis pomiędzy maszyną do pracy w ciężkim terenie i transportowym pojazdem. 
+			Łączy zalety maszyn kołowych i gąsienicowych, czyniąc zeń maszynę zdolną do jazdy w niemal każdych warunkach, którą łatwo jest również manewrować.</td>
+			<td><img class="image" src="../LAB_1/obrazy/class.jpg"></td>
+
+		</tr>
+		
+</body>
+</html>

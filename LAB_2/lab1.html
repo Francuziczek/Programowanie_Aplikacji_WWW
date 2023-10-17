@@ -6,7 +6,13 @@
 	<meta name="Author" content="Dominik Franczak" />
 	<title>Moje hobby to rolnictwo</title>
 	<script src="kolorujtlo.js" type = "text/javascript"></script>
+	<script src="timedate.js" type = "text/javascript"></script>
 	<style>
+		body{
+			background-image: url(../LAB_1/obrazy/tlo_glowne.jpg);
+			background-size: cover;
+            background-repeat: no-repeat;
+		}
 		.image{
 			width:100px;
 			transition: transform 3s;
@@ -64,10 +70,32 @@
             text-align: center; 
 			color: white;
         }
+		.clock{
+			position: absolute;
+			top: 60px;
+			right: 10px;
+			border: 2px solid #333;
+			padding: 10px;
+			border-radius: 10px;
+			background-color: #f5f5f5;
+			width: 100px;
+			text-align: center;
+		}
+		.data{
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			border: 2px solid #333;
+			padding: 10px;
+			border-radius: 10px;
+			background-color: #f5f5f5;
+			width: 100px;
+			text-align: center;
+		}
 	</style>
 </head>
 
-<body>		﻿
+<body onload="startclock()">﻿
 
 <FORM METHOD="POST" NAME="background">
 	<INPUT TYPE="button" VALUE="żółty" ONCLICK="changeBackground('#FFF000')"> 
@@ -78,15 +106,18 @@
 	<INPUT TYPE="button" VALUE="pomarańczowy" ONCLICK="changeBackground('#FF8000')"> 	
 	<INPUT TYPE="button" VALUE="szary" ONCLICK="changeBackground('#c0c0c0')"> 
 	<INPUT TYPE="button" VALUE="czerwony" ONCLICK="changeBackground('#FF0000')">
-	<INPUT TYPE="button" VALUE="obrazek" ONCLICK="changeBackgroundPicture('LAB_1/obrazy/tlo_glowne.jpg')">
+	<INPUT TYPE="button" VALUE="grafika" ONCLICK="changeBackgroundPicture('../LAB_1/obrazy/tlo_glowne.jpg')">
 </FORM>
 
+<div class="clock" id="zegarek"></div>
+<div class="data" id="data"></div>
+	
 	<h1>Moje hobby to rolnictwo</h1>
-	<a href="..\LAB_1\podstrona1.html">Ciągniki</a>
-	<a href="..\LAB_1\podstrona2.html">Kombajny</a>
-	<a href="..\LAB_1\podstrona3.html">Maszyny</a>
-	<a href="..\LAB_1\podstrona4.html">Zwierzęta</a>
-	<a href="..\LAB_1\podstrona5.html">Uprawy</a>
+	<a href="..\LAB_2\podstrona1.html">Ciągniki</a>
+	<a href="..\LAB_2\podstrona2.html">Kombajny</a>
+	<a href="..\LAB_2\podstrona3.html">Maszyny</a>
+	<a href="..\LAB_2\podstrona4.html">Zwierzęta</a>
+	<a href="..\LAB_2\podstrona5.html">Uprawy</a>
 	<h2>  Trochę informacji i może historii </h2>
 	<p style="text-indent: 20px">Jak to się zaczęło?</p>
 	<p>

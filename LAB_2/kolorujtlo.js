@@ -29,6 +29,7 @@ function clear(form) {
 }
 
 function changeBackground(hexNumber) {
+	document.body.style.backgroundImage = `none`;
     document.bgColor = hexNumber;
 }
 function changeBackgroundPicture(imURL) {
