@@ -1,0 +1,39 @@
+		body{
+			background-color: #FF8000;
+		}
+		.image{
+			width:200px;
+			transition: transform 3s;
+		}
+		.image:hover{
+			width:300px;
+			transform: scale(2);
+		}
+		h1{
+			font-size: 65px;
+			border-bottom: 2px solid black;
+			text-align: center;
+			color: white;
+		}
+		a{
+			margin: 130px;
+			border: 1px solid green; border-radius: 5px 10px 5px 10px;
+			background-color: #222222;
+			padding: 8px;
+			transition: font-size 1s;
+			text-decoration: none;
+			color: gray;
+		}
+		a:hover {
+			font-size: 30px;
+		}
+		table{
+            border-collapse: collapse;
+            width: 70%;
+            margin: 0 auto;
+        }
+        td{
+            padding: 8px;
+            text-align: center; 
+			color: white;
+        }
