@@ -25,27 +25,21 @@
 			text-shadow: black 0.3em 0.3em 0.3em;
 		}
 		a{
-			display: inline;
-			margin: 100px;
+			margin: 80px;
 			border: 1px solid green; 
 			border-radius: 5px 10px 5px 10px;
 			background-color: #222222;
 			padding: 8px;
-			transition: font-size 2s;
+			transition: font-size 1s;
 			text-decoration: none;
 			color: gray;
 		}
 		a:hover {
 			font-size: 30px;
 		}
-		na{
+		.head{
 			position: fixed;
-			margin-top : 10px;
-			margin: 100px;
-		}
-		pod{
-			position: fixed;
-			margin-bottom : 10px;
+			top: 20px;
 		}
 		table{
             border-collapse: collapse;
