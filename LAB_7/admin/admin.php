@@ -111,15 +111,8 @@ function DodajNowaPodstrone() {
 
 function UsunPodstrone($id) {
 	global $link;
-    $query = "SELECT * FROM page_list WHERE id=$id";
-    $result = mysqli_query($link, $query);
-    $row = mysqli_fetch_assoc($result);
-	
-    echo '<form method="post"';
-    echo '<input type="hidden" name="id" value="' . $id . '">';
-    echo '<p>Czy na pewno chcesz usunąć tę podstronę?</p>';
-    echo '<input type="submit" value="Tak">';
-    echo '</form>';
+    $query = "SELECT * FROM page_list WHERE id=$id LIMIT 1";
+    mysqli_query($link, $query);
     }
 
 
