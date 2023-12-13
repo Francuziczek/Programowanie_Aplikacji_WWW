@@ -1,0 +1,77 @@
+	<style>
+	body{
+		background-image: url(./obrazy/uprawa.jpg);
+		background-size: cover;
+        background-repeat: no-repeat;
+	}
+	</style>
+	<div class="clock" id="zegarek"></div>
+	<div class="data" id="data"></div>
+
+	<h1>Uprawy</h1>
+	<table>
+		<tr>
+			<td>Zbożowe</td>
+			<td>Kukurydza, pszenica, ryż, jęczmień, żyto, pszenżyto, proso, sorgo, owies. 
+			Ziarna o wysokiej zawartości skrobi, są wykorzystywane do celów konsumpcyjnych, pastewnych i przemysłowych. 
+			Najpopularniejszymi produktami przerobu zbóż są mąki, kasze.</td>
+			<td><img class="image" src="./obrazy/zboza.jpg"></td>
+		</tr>
+		<tr>
+			<td>Oleiste</td>
+			<td>Rzepak, rzepik, słonecznik, len oleisty, orzeszki
+			ziemne, sezam i soja. Uprawiane ze względu na wysoką zawartość tłuszczu. 
+			Wykorzystywane są w gospodarstwach domowych oraz w przemyśle cukierniczym, 
+			piekarniczym, konserwowym i rybnym, a także do produkcji farb i lakierów, 
+			kosmetyków, leków, środków ochrony roślin, produkcji gum i smarowania silników</td>
+			<td><img class="image" src="./obrazy/oleiste.jpg"></td>
+		</tr>
+		<tr>
+			<td>Okopowe (bulwiaste)</td>
+			<td>Ziemniaki, buraki, maniok, bataty. Rośliny okopowe gromadzą substancje zapasowe w korzeniu lub 
+			bulwie w postaci wielocukrów, dwucukrów i cukrów prostych. Rośliny te należą do różnych rodzin botanicznych. 
+			Mają duże znaczenie gospodarcze jako źródło pożywienia.</td>
+			<td><img class="image" src="./obrazy/ziem.jpg"></td>
+		</tr>
+		<tr>
+			<td>Strączkowe</td>
+			<td>Soczewica, fasola, groch, ciecierzyca. rośliny z rodziny bobowatych (motylkowatych) o dużych nasionach uprawiane 
+			jako rośliny pastewne, jadalne i dostarczające surowca do przemysłu spożywczego. 
+			Uprawiane są dla nasion, paszy i jako zielony nawóz. 
+			Ponieważ tak jak inne motylkowe współżyją z bakteriami brodawkowymi – wiążą wolny azot.</td>
+			<td><img class="image" src="./obrazy/groch.jpg"></td>
+		</tr>
+		<tr>
+			<td>Owoce i warzywa</td>
+			<td>Jabłka, gruszki, wiśnie, czereśnie, śliwy, truskawki, cebula, 
+			kapusta, pomidor, marchew, pietruszka, seler, por, ogórek, kalafior. Częściami użytkowymi roślin warzywnych 
+			mogą być całe rośliny lub tylko: liście, owoce, kwiatostany, bulwy, łodygi i korzenie, natomiast roślin owocowych tylko owoc.</td>
+			<td><img class="image" src="./obrazy/owoc.jpg"></td>
+		</tr>
+		<tr>
+			<td>Miododajne</td>
+			<td>Rośliny zaliczane do roślin pszczelarskich lub roślin pożytkowych – rośliny o kwiatach barwnych i 
+			wonnych, kwitnące długo i obficie, które dostarczają pszczołom surowca do produkcji miodu – nektaru (rośliny nektarodajne) 
+			lub rośliny, na których liściach i pędach wytwarzany jest inny surowiec do produkcji miodu. </td>
+			<td><img class="image" src="./obrazy/miod.jpg"></td>
+		</tr>
+		<tr>
+			<td>Cukrodajne</td>
+			<td>Burak cukrowy, trzcina cukrowa. Rośliny typowo przemysłowe, z których wytwarza się głównie cukier.</td>
+			<td><img class="image" src="./obrazy/burak.jpg"></td>
+		</tr>
+	</table>
+	<!-- Przyciski do zmiany koloru -->
+	<div style="item-align: center; position: fixed; bottom : 0; padding: 10px;">
+		<FORM METHOD="POST" NAME="background">
+		<INPUT TYPE="button" VALUE="żółty" ONCLICK="changeBackground('#FFF000')"> 
+		<INPUT TYPE="button" VALUE="czarny" ONCLICK="changeBackground('#000000')"> 
+		<INPUT TYPE="button" VALUE="biały" ONCLICK="changeBackground('#FFFFFF')"> 
+		<INPUT TYPE="button" VALUE="zielony" ONCLICK="changeBackground('#00FF00')"> 
+		<INPUT TYPE="button" VALUE="niebieski" ONCLICK="changeBackground('#0000FF')">
+		<INPUT TYPE="button" VALUE="pomarańczowy" ONCLICK="changeBackground('#FF8000')"> 
+		<INPUT TYPE="button" VALUE="szary" ONCLICK="changeBackground('#c0c0c0')"> 
+		<INPUT TYPE="button" VALUE="czerwony" ONCLICK="changeBackground('#FF0000')">
+		<INPUT TYPE="button" VALUE="grafika" ONCLICK="changeBackgroundPicture('./obrazy/uprawa.jpg')">
+		</FORM>
+	</div>

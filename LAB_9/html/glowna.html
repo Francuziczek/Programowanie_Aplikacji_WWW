@@ -1,0 +1,134 @@
+	<!-- Strona główna wyświetlana na samym początku -->
+	<div class="clock" id="zegarek"></div>
+	<div class="data" id="data"></div>
+	<h1>Moje hobby to rolnictwo</h1>
+	<h2>  Trochę informacji i może historii </h2>
+	<p style="text-indent: 20px">Jak to się zaczęło?</p>
+	<p>
+	Początki rolnictwa datuje się na neolit – 10 000 do 3000 lat p.n.e., chociaż pojawiają się doniesienia o przypadkach wcześniejszego pojawienia się upraw. 
+	Przejście od łowiectwa i zbieractwa do uprawy roli stopniowo przyniosło rewolucyjne zmiany gospodarcze i społeczne (tzw. rewolucja neolityczna), 
+	przy czym za początkową fazę rozwoju rolnictwa uważa się gospodarkę kopieniaczą polegającą na tworzeniu przydomowych ogrodów, które służyły jako tymczasowe 
+	zabezpieczenie dla społeczeństw zbieracko-łowieckich na wypadek nieurodzaju. Zmienił się tryb życia ludzi z koczowniczego na osiadły, powstały bardziej złożone formy społeczne, 
+	doszło do rozwoju bogatej kultury. Zmienił się stosunek człowieka do przyrody, którą zaczął człowiek zmieniać na coraz szerszą skalę i dostosowywać do własnych potrzeb.
+	
+	Pierwsza systematyczna uprawa roli rozpoczęła się ok. 8000 r. p.n.e. na Bliskim Wschodzie (żyzny półksiężyc – Mezopotamia, Egipt), a wkrótce niemal jednocześnie w trzech oddalonych od siebie częściach świata na 
+	obszarach współczesnych: Indii, Chin, Meksyku i Peru. Pierwszymi roślinami uprawnymi były różne rodzaje pszenicy i jęczmienia (Bliski Wschód). W Azji Południowo-Wschodniej były to groch, bób, ryż i proso, 
+	natomiast w Ameryce Środkowej i Południowej – dynia, fasola i kukurydza. I tak dzięki uprawie roślin mogły się rozwinąć wielkie cywilizacje starożytne, nazywane niekiedy od głównych roślin uprawnych 
+	cywilizacją pszenicy, ryżu i kukurydzy.
+	</p>
+	<p style="text-indent: 20px">Jak to jest w Europie?</p>
+	<p>
+	W UE jest 12,248 mln gospodarstw, które zajmują obszar 174 milionów ha i zatrudniają 25 milionów osób. Większość z nich to gospodarstwa małoobszarowe. 
+	Tylko 2,7 % z wszystkich farm stanowią te powyżej 100 ha. 11,885 mln (97%) ma poniżej 100 ha. 75% z nich ma poniżej 10 ha, a 69% poniżej 5 ha. 
+	Ziemia jest kontrolowana przez duże farmy. To te powyżej 100 ha (2,7%) zajmują ponad 50% ziemi rolnej w Europie. 
+	To oznacza, że 336 tys. rolników zarządza 91 mln ha w Europie. Pozostałe 50% ziemi jest w rękach 12 mln europejskich rolników (97% wszystkich).
+	</p>
+	<div style="text-align: center"><img id="gleby" style="width:100px; height:80px;" src="obrazy/gleby.png"></div>
+	<!-- Skrypt powiększania zdjęcia -->
+		<script>
+	$("#gleby").on("click", function(){
+    if ($(this).width() < 1000) {
+        // Jeśli szerokość elementu jest mniejsza niż 500px, to animuj powiększenie
+        $(this).animate({
+            width: "1000px",
+			height: "800px",
+            opacity: 1,
+            fontSize: "4em",
+            borderWidth: "10px"
+        }, 1500);
+    } else {
+        // Jeśli szerokość osiągnęła lub przekroczyła 500px, to animuj powrót do początku
+        $(this).animate({
+            width: "100px", // Możesz ustawić dowolną początkową szerokość
+			height: "80px",
+            opacity: 1, // Przywróć pełną przejrzystość
+            fontSize: "1em", // Przywróć rozmiar czcionki do domyślnego
+            borderWidth: "1px" // Przywróć domyślną szerokość obramowania
+        }, 1500);
+    }
+	});
+	</script>
+	
+	<table>
+		<tr>
+			<th><b>Klasa</b></th>
+			<th><b>Jakość gleby<b></th>
+			<th><b>% powierzchni w Polsce<b></th>
+			<th><b>Typy gleb<b></th>
+		</tr>
+		<tr>
+			<td>I</td>
+			<td>najlepsza</td>
+			<td>~0,5%</td>
+			<td>czarnoziemy, najlepsze czarne ziemie, mady i rędziny, brunatne na lessach</td>
+		</tr>
+		<tr>
+			<td>II</td>
+			<td>bardzo dobra</td>
+			<td>~3,0%</td>
+			<td>czarnoziemy, dobre czarne ziemie, mady, rędziny i brunatne, najlepsze płowe</td>
+		</tr>
+		<tr>
+			<td>III</td>
+			<td>dobra</td>
+			<td>~23,5%</td>
+			<td>brunatne, płowe, czarne ziemie, rędziny, mady, zmeliorowane bagienne</td>
+		</tr>
+		<tr>
+			<td>IV</td>
+			<td>średnia</td>
+			<td>~39,5%</td>
+			<td>brunatne, płowe, bagienne, lepsze bielice, słabsze rędziny, ciężkie mady</td>
+		</tr>
+		<tr>
+			<td>V</td>
+			<td>słaba</td>
+			<td>~21,0%</td>
+			<td>bielice, płowe, słabe brunatne, płytkie mady i rędziny</td>
+		</tr>
+		<tr>
+			<td>VI</td>
+			<td>bardzo słaba</td>
+			<td>~12,5%</td>
+			<td>słabe bielice, gleby górskie</td>
+		</tr>
+	</table>
+	
+	<div id = "mail" class = "test-block">
+		<p style="text-align: center">Napisz do mnie maila</p>
+		<form action="mailto:domel2002@o2.pl">
+			<p style="text-align: center">Twój adres e-mail</p>
+			<input type="email" id="email" name="email"><br>
+			<p style="text-align: center">Twoja wiadomość</p>
+			<textarea id="wiadomość" name="wiadomość" rows="4" cols="25"></textarea><br>
+			<input type="submit" value="Wyślij">
+		</form>	
+	</div>
+	<script>
+	$("#mail").on({
+		"mouseover": function(){
+			$(this).animate({
+				width:500
+			},800);
+		},
+		"mouseout": function(){
+			$(this).animate({
+				width: 200
+			}, 800);
+		}
+	});
+	</script>
+	<!-- Przyciski do zmiany koloru -->
+	<div style="item-align:center; position: fixed; bottom : 0; padding: 10px;">
+		<FORM METHOD="POST" NAME="background">
+		<INPUT TYPE="button" VALUE="żółty" ONCLICK="changeBackground('#FFF000')"> 
+		<INPUT TYPE="button" VALUE="czarny" ONCLICK="changeBackground('#000000')"> 
+		<INPUT TYPE="button" VALUE="biały" ONCLICK="changeBackground('#FFFFFF')"> 
+		<INPUT TYPE="button" VALUE="zielony" ONCLICK="changeBackground('#00FF00')"> 
+		<INPUT TYPE="button" VALUE="niebieski" ONCLICK="changeBackground('#0000FF')">
+		<INPUT TYPE="button" VALUE="pomarańczowy" ONCLICK="changeBackground('#FF8000')"> 
+		<INPUT TYPE="button" VALUE="szary" ONCLICK="changeBackground('#c0c0c0')"> 
+		<INPUT TYPE="button" VALUE="czerwony" ONCLICK="changeBackground('#FF0000')">
+		<INPUT TYPE="button" VALUE="grafika" ONCLICK="changeBackgroundPicture('./obrazy/tlo_glowne.jpg')">
+		</FORM>
+	</div>
