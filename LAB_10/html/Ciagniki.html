@@ -1,0 +1,50 @@
+	<style>
+	body{
+		background-image: url(./obrazy/ciagnik.jpg);
+		background-size: cover;
+        background-repeat: no-repeat;
+	}
+	</style>
+	<div class="clock" id="zegarek"></div>
+	<div class="data" id="data"></div>
+	<h1>Ciągniki</h1>
+	
+	<table>
+		<tr>
+			<td>Ciągniki kołowe</td>
+			<td>To najpopularniejszy typ tego pojazdu napędzany wysokoprężną i osadzony na pompowanych powietrzem kołach. 
+			Sprawdzają się jako maszyny do prac ciężkich, lekkich jak i w roli transportera, mogącego poruszać się również po normalnych drogach </td>
+			<td><img id="gleby" class="image" src="./obrazy/fendt.jpg"></td>
+
+		</tr>
+		<tr>
+			<td>Ciągniki gąsienicowe</td>
+			<td>To specjalistyczny typ pojazdu, którego obecność w parku maszynowym zawsze jest uzasadniona. 
+			Silnik napędza tu dwie równoległe gąsienice, które idealnie sprawdzają się przy pracy w naprawdę grząskim lub sypkim terenie. 
+			Tam gdzie pompowane koła grzęzną bezradnie, gąsienice przejadą bez problemu i pozwolą nam wykonywać pracę bez przeszkód.
+			Ten typ pojazdu nie nadaje się jednak do przemieszczania po zwykłych drogach, ze względu na uszkodzenia jakie powoduje na nawierzchni</td>
+			<td><img id="gleby" class="image" src="./obrazy/case.jpg"></td>
+
+		</tr>
+		<tr>
+			<td>Ciągniki półgąsienicowe</td>
+			<td>To kompromis pomiędzy maszyną do pracy w ciężkim terenie i transportowym pojazdem. 
+			Łączy zalety maszyn kołowych i gąsienicowych, czyniąc zeń maszynę zdolną do jazdy w niemal każdych warunkach, którą łatwo jest również manewrować.</td>
+			<td><img id="gleby" class="image" src="./obrazy/class.jpg"></td>
+
+		</tr>	
+	</table>
+	<!-- Przyciski do zmiany koloru -->
+	<div style="item-align: center; position: fixed; bottom : 0; padding: 10px;">
+		<FORM METHOD="POST" NAME="background">
+		<INPUT TYPE="button" VALUE="żółty" ONCLICK="changeBackground('#FFF000')"> 
+		<INPUT TYPE="button" VALUE="czarny" ONCLICK="changeBackground('#000000')"> 
+		<INPUT TYPE="button" VALUE="biały" ONCLICK="changeBackground('#FFFFFF')"> 
+		<INPUT TYPE="button" VALUE="zielony" ONCLICK="changeBackground('#00FF00')"> 
+		<INPUT TYPE="button" VALUE="niebieski" ONCLICK="changeBackground('#0000FF')">
+		<INPUT TYPE="button" VALUE="pomarańczowy" ONCLICK="changeBackground('#FF8000')"> 
+		<INPUT TYPE="button" VALUE="szary" ONCLICK="changeBackground('#c0c0c0')"> 
+		<INPUT TYPE="button" VALUE="czerwony" ONCLICK="changeBackground('#FF0000')">
+		<INPUT TYPE="button" VALUE="grafika" ONCLICK="changeBackgroundPicture('./obrazy/ciagnik.jpg')">
+		</FORM>
+	</div>

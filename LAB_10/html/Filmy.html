@@ -1,0 +1,43 @@
+	<style>
+	body{
+		background-image: url(./obrazy/rolnictwo.jpg);
+		background-size: cover;
+        background-repeat: no-repeat;
+	}
+	</style>
+	<div class="clock" id="zegarek"></div>
+	<div class="data" id="data"></div>
+	<h1>Filmy związane z rolnictwem</h1>
+	<!-- Linki do filmów na stronie html -->
+	<table>
+		<tr>
+			<td><h2> Jak to było kiedyś.</h2></td>
+			<td><iframe width="560" height="315" src="https://www.youtube.com/embed/W_KIJnbGGww?si=f2-ZmMDLxHSRHFoC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+		</tr>
+		<tr>
+			<td><iframe width="560" height="315" src="https://www.youtube.com/embed/LAdP29YPWqQ?si=gk2aB_UDNvFP8U2J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+			<td><h2>Opinie, prezentacje i szczegóły o maszynach.</h2></td>
+		</tr>
+		<tr>
+			<td><h2>Trochę wiedzy i nie tylko.</h2></td>
+			<td><iframe width="560" height="315" src="https://www.youtube.com/embed/X_WJBawTLbk?si=1LmZQ9QIv5fOcxri" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+		</tr>
+		<tr>
+			<td><iframe width="560" height="315" src="https://www.youtube.com/embed/U0s3GP956B8?si=rsrbC-rCf8lQO_wF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+			<td><h2>Nie zawsze jest poważnie :)</h2></td>
+		</tr>
+	</table>
+		<!-- Przyciski do zmiany koloru -->
+		<div style="item-align: center; position: fixed; bottom : 0; padding: 10px;">
+		<FORM METHOD="POST" NAME="background">
+		<INPUT TYPE="button" VALUE="żółty" ONCLICK="changeBackground('#FFF000')"> 
+		<INPUT TYPE="button" VALUE="czarny" ONCLICK="changeBackground('#000000')"> 
+		<INPUT TYPE="button" VALUE="biały" ONCLICK="changeBackground('#FFFFFF')"> 
+		<INPUT TYPE="button" VALUE="zielony" ONCLICK="changeBackground('#00FF00')"> 
+		<INPUT TYPE="button" VALUE="niebieski" ONCLICK="changeBackground('#0000FF')">
+		<INPUT TYPE="button" VALUE="pomarańczowy" ONCLICK="changeBackground('#FF8000')"> 
+		<INPUT TYPE="button" VALUE="szary" ONCLICK="changeBackground('#c0c0c0')"> 
+		<INPUT TYPE="button" VALUE="czerwony" ONCLICK="changeBackground('#FF0000')">
+		<INPUT TYPE="button" VALUE="grafika" ONCLICK="changeBackgroundPicture('./obrazy/rolnictwo.jpg')">
+		</FORM>
+	</div>
