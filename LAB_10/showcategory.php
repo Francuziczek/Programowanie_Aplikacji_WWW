@@ -10,7 +10,13 @@ function PokazKategorie($matka = 0)
 
     echo '<ul>';
     while ($row = mysqli_fetch_array($result)) {
-        echo '<li>'. htmlspecialchars($row['id']) .' '. htmlspecialchars($row['nazwa']) . ' <a href="?edit=' . $row['id'] . '">Edytuj</a>' . ' <a href="?delete=' . $row['id'] . '">Usuń</a>' . ' <a href="?add=' . $row['id'] . '">DodajKategorie</a>' . '</li>';
+        echo '<li>' . ' ' . htmlspecialchars($row['nazwa']) . ' <a href="?edit=' . $row['id'] . '">Edytuj</a>' . ' <a href="?delete=' . $row['id'] . '">Usuń</a>';
+
+        if ($matka_clear == 0) {
+            echo ' <a href="?add=' . $row['id'] . '">DodajKategorie</a>';
+        }
+
+        echo '</li>';
         PokazKategorie($row['id']);
     }
     echo '</ul>';
@@ -70,12 +76,19 @@ function UsunKategorie($id)
 
 function DodajKategorie()
 {
-	$mysqli = new mysqli("localhost", "root", "", "moja_strona");
-    if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['matka'], $_POST['nazwa'])) {
-        $matka = $_POST['matka'];
-        $nazwa = $_POST['nazwa'];
+    $mysqli = new mysqli("localhost", "root", "", "moja_strona");
 
-        $matka_clear = (int)$matka;
+    if (isset($_POST['nazwa'])) {
+        $nazwa = $_POST['nazwa'];
+        $matka = $_POST['matka'];
+
+		$query = "SELECT id FROM sklep_kategorie WHERE nazwa='$matka'";
+		$result = mysqli_query($mysqli, $query);
+    
+		if ($row = mysqli_fetch_assoc($result)) {
+			$matka_clear = (int)$row['id'];
+		}
+
         $nazwa_clear = mysqli_real_escape_string($mysqli, $nazwa);
 
         $query = "INSERT INTO sklep_kategorie (matka, nazwa) VALUES ('$matka_clear', '$nazwa_clear')";
@@ -86,11 +99,12 @@ function DodajKategorie()
         exit();
     }
 
+    // Wyświetlanie formularza
     echo '<form method="post" action="">
-			<label for="matka">Matka:</label>
-            <input type="text" name="matka" required>
             <label for="nazwa">Nazwa:</label>
             <input type="text" name="nazwa" required>
+            <label for="matka">Kategoria nadrzędna:</label>
+            <input type="text" name="matka">
             <button type="submit">Dodaj kategorię</button>
           </form>';
 }
