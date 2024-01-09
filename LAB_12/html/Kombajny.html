@@ -1,0 +1,51 @@
+	<style>
+	body{
+		background-image: url(./obrazy/Kombajn.jpg);
+		background-size: cover;
+        background-repeat: no-repeat;
+	}
+	</style>
+	<div class="clock" id="zegarek"></div>
+	<div class="data" id="data"></div>
+	<h1>Kombajny</h1>	
+	<br><br><br>
+	<table>
+		<tr>
+			<td>Kombajny zbożowe</td>
+			<td>Ich praca polega na koszeniu i młóceniu. Wykonują te same zadania, które dawniej należały do kosiarek, żniwiarzy i żniwiarek oraz młocarni. 
+			Kombajn zbożowy można wykorzystać do zbioru m.in. pszenicy, jęczmienia, żyta, owsa czy pszenżyta, 
+			a po modyfikacji także do zbioru rzepaku, kukurydzy, słonecznika czy roślin motylkowych: grochu, łubinu itp.</td>
+			<td><img class="image" src="./obrazy/john.jpg"></td>
+		</tr>
+		<tr>
+			<td>Kombajny ziemniaczane</td>
+			<td>Wykopuje bulwy z redlin i oddziela je od łętów, kamieni i innych zanieczyszczeń. Ten rodzaj kombajnu rolniczego dzieli się na kilka typów pojazdów, 
+			które różnią się szerokością roboczą, sposobem postępowania z bulwami oraz sposobem jazdy </td>
+			<td><img class="image" src="./obrazy/grimme.jpg"></td>
+		</tr>
+		<tr>
+			<td>Kombajny buraczane</td>
+			<td>Ogławiają buraki z liści rozdrabniając je, a także wykopują korzenie oczyszczając je i gromadzą korzenie w zasobniku.
+			Co więcej, takie nowoczesne maszyny rolnicze dzięki innowacyjnym układom bieżnym chronią glebę przed ugnieceniem.</td>
+			<td><img class="image" src="./obrazy/ropa.jpg"></td>
+		</tr>
+		<tr>
+			<td>Kombajny do zbioru roślin sadowniczych i warzyw</td>
+			<td>Takie maszyny rolnicze specjalizują się w zbiorach malin, porzeczek, agrestu, borówki, ogórków, cebuli, marchwi i kapusty. 
+			Zdarza się, że producenci tworzą osobne pojazdy umożliwiające automatyczny zbiór także wiśni oraz jabłek.</td>
+			<td><img class="image" src="./obrazy/marchew.jpg"></td>
+		</tr>
+	</table>
+	<div style="item-align: center; position: fixed; bottom : 0; padding: 10px;">
+		<FORM METHOD="POST" NAME="background">
+		<INPUT TYPE="button" VALUE="żółty" ONCLICK="changeBackground('#FFF000')"> 
+		<INPUT TYPE="button" VALUE="czarny" ONCLICK="changeBackground('#000000')"> 
+		<INPUT TYPE="button" VALUE="biały" ONCLICK="changeBackground('#FFFFFF')"> 
+		<INPUT TYPE="button" VALUE="zielony" ONCLICK="changeBackground('#00FF00')"> 
+		<INPUT TYPE="button" VALUE="niebieski" ONCLICK="changeBackground('#0000FF')">
+		<INPUT TYPE="button" VALUE="pomarańczowy" ONCLICK="changeBackground('#FF8000')"> 
+		<INPUT TYPE="button" VALUE="szary" ONCLICK="changeBackground('#c0c0c0')"> 
+		<INPUT TYPE="button" VALUE="czerwony" ONCLICK="changeBackground('#FF0000')">
+		<INPUT TYPE="button" VALUE="grafika" ONCLICK="changeBackgroundPicture('./obrazy/Kombajn.jpg')">
+		</FORM>
+	</div>
